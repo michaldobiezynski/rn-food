@@ -13,9 +13,7 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
         onChangeText={(newTerm) => onTermChange(newTerm)}
         style={styles.inputStyle}
         placeholder="Search"
-        onEndEditing={() => {
-          onTermSubmit();
-        }}
+        onEndEditing={onTermSubmit}
       />
     </View>
   );
