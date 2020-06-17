@@ -25,9 +25,7 @@ const SearchScreen = () => {
         }}
       />
       {errorMessage ? <Text>{errorMessage}</Text> : null}
-      <Text style={{ marginLeft: 15 }}>
-        We have found {results.length} results
-      </Text>
+
       <ScrollView>
         <ResultsList
           results={filterResultsByPrice("$")}
